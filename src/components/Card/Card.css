@@ -19,7 +19,7 @@
 .showStatus {
     position: absolute;
     right: 0;
-    background: rgb(34, 255, 1);
+    background: lightgray;
     border-radius: 50%;
     bottom: 0;
     width: 10px;
