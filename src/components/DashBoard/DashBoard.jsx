@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { DiCodeigniter } from "react-icons/di";
 import "./DashBoard.css";
 import Card from "../Card/Card";
+import Loading from "./Loading.jsx"
 
 const DashBoard = () => {
   const isStatus = localStorage.getItem("group") === "status";
@@ -266,9 +267,17 @@ const DashBoard = () => {
                     <DiCodeigniter />
                     // <p></p>
                   )}{" "}
-                  <span>
-                    {element[index]?.title} {element[index].value?.length}
-                  </span>
+                  <Loading
+                    specialNames={[
+                      "Anoop sharma",
+                      "Yogesh",
+                      "Shankar Kumar",
+                      "Ramesh",
+                      "Suresh",
+                    ]}
+                    element={element}
+                    index={index}
+                  />
                 </div>
                 <div className="rightView">
                   <svg

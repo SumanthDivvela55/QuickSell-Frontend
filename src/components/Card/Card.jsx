@@ -11,7 +11,7 @@ const userLetters = {
 };
 
 const userColors = {
-  "usr-1": "orange", 
+  "usr-1": "orange",
   "usr-2": "green",
   "usr-3": "violet",
   "usr-4": "pink",
